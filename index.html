@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUPER MENU MASTER</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    text-align: center;
+  }
+  h1 {
+    color: #00ffff;
+  }
+  .menu {
+    margin: 20px auto;
+    max-width: 600px;
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .menu a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .menu a:hover {
+    background: #00ffff;
+    color: #000;
+  }
+  #datetime {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ccc;
+  }
+</style>
+<script>
+  function updateDateTime() {
+    const now = new Date();
+    document.getElementById('datetime').innerText = 
+      `Data e hora atual: ${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+  }
+  setInterval(updateDateTime, 1000);
+</script>
+</head>
+<body onload="updateDateTime()">
+  <h1>SUPER SCRIPT MASTER</h1>
+  <div id="datetime"></div>
+
+  <div id="drivers" class="menu">
+    <h2>Drivers PC e Notebook</h2>
+    <a href="https://www.asus.com/support/" target="_blank">ASUS</a>
+    <a href="https://www.acer.com/ac/pt/BR/content/drivers" target="_blank">Acer</a>
+    <a href="https://www.dell.com/support/home/" target="_blank">Dell</a>
+    <a href="https://support.hp.com/br-pt/drivers" target="_blank">HP</a>
+    <a href="https://pcsupport.lenovo.com/br/pt/downloads" target="_blank">Lenovo</a>
+    <a href="https://www.msi.com/support" target="_blank">MSI</a>
+    <a href="https://www.gigabyte.com/Support/Support-Download" target="_blank">Gigabyte</a>
+    <a href="https://www.samsung.com/us/support/downloads/" target="_blank">Samsung</a>
+    <a href="https://support.toshiba.com/drivers" target="_blank">Toshiba</a>
+    <a href="https://support.dynabook.com/" target="_blank">Sony VAIO</a>
+    <a href="https://support.microsoft.com/surface" target="_blank">Microsoft Surface</a>
+    <a href="https://www.fujitsu.com/global/support/" target="_blank">Fujitsu</a>
+  </div>
+
+  <div id="solucoes" class="menu">
+    <h2>Soluções e Dicas Técnicas</h2>
+    <a href="https://xerifetech.com/" target="_blank">Xerife Tech</a>
+    <a href="https://beacons.ai/danielaugusto" target="_blank">Daniel Augusto</a>
+  </div>
+
+  <div id="programas" class="menu">
+    <h2>Programas Windows e Linux</h2>
+    <a href="https://www.filehorse.com/" target="_blank">FileHorse</a>
+    <a href="https://www.fosshub.com/" target="_blank">FossHub</a>
+    <a href="https://snapcraft.io/" target="_blank">Snapcraft</a>
+  </div>
+
+  <div id="sistemas" class="menu">
+    <h2>Sistemas Operacionais</h2>
+    <a href="https://www.microsoft.com/pt-br/software-download/windows10" target="_blank">Windows 10</a>
+    <a href="https://www.microsoft.com/pt-br/software-download/windows11" target="_blank">Windows 11</a>
+    <a href="https://www.linux.org/pages/download/" target="_blank">Distros Linux</a>
+  </div>
+
+  <div id="office" class="menu">
+    <h2>Office</h2>
+    <a href="https://www.microsoft.com/pt-br/microsoft-365/get-started-with-office-2019" target="_blank">Microsoft Office</a>
+  </div>
+
+  <div id="antivirus" class="menu">
+    <h2>Antivírus</h2>
+    <a href="https://www.avast.com/pt-br/index" target="_blank">Avast</a>
+    <a href="https://www.avg.com/pt-br/homepage" target="_blank">AVG</a>
+    <a href="https://www.bitdefender.com/" target="_blank">Bitdefender</a>
+    <a href="https://www.kaspersky.com/" target="_blank">Kaspersky</a>
+    <a href="https://www.malwarebytes.com/" target="_blank">Malwarebytes</a>
+    <a href="https://us.norton.com/" target="_blank">Norton</a>
+    <a href="https://www.pandasecurity.com/" target="_blank">Panda</a>
+    <a href="https://www.sophos.com/" target="_blank">Sophos</a>
+    <a href="https://support.microsoft.com/pt-br/windows/security" target="_blank">Windows Defender</a>
+  </div>
+
+  <!-- Seguir o mesmo padrão para os demais menus -->
+
+</body>
+</html>
